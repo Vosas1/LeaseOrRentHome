@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textViewCustomerInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="20dp"
+        android:text="Customer Information"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCustomerInfo"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Full Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFullName"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Credit/Debit Card Number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextFavoriteSport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCardNumber"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Favorite Sport"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextFavoriteTeam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFavoriteSport"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Favorite Team"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editTextFavoriteFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFavoriteTeam"
+        android:layout_marginTop="20dp"
+        android:hint="Enter Favorite Food"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextFavoriteFood"
+        android:layout_marginTop="20dp"
+        android:text="Submit"
+        android:onClick="onSubmitClick" />
+
+</RelativeLayout>
+
